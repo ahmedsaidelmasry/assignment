@@ -1,0 +1,65 @@
+/** start navbar section*/
+.container{
+    margin:0;
+    padding:0;
+    background-color: whitesmoke;
+}
+.overlay{
+    padding: 10px 200px;
+}
+.navbar ul{
+list-style: none;
+display: inline;
+}
+.navbar ul :first-child{
+      font-size: 25px;
+}
+.navbar ul :last-child{
+    float: right;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    color: red;
+    background-color: bisque;
+    text-align: center;
+    line-height: 30px;
+}
+.clear{
+    clear:both;
+    border-bottom: 1px solid #222;
+}
+
+/* end of navbar section*/
+
+/* start table section*/
+.new-car{
+    padding: 20px 0px;
+}
+.new-car button{
+    width: 200px;
+    height: 30px;
+    background-color: green;
+    color: white;
+}
+table, td, tr {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    text-align: center;
+}
+.del a{
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    color: red;
+    background-color: bisque;
+    text-align: center;
+    line-height: 30px;
+}
+/* end of table section*/

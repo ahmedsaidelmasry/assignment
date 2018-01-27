@@ -1,0 +1,26 @@
+<div class="container">
+
+  <div class="label">
+Brand:<input type="text" [(ngModel)]="Brand" name="Brand">
+ </div>
+<br>
+<!--Country: <select>
+  <option value="{{country.country}}" [(ngModel)]="Country" *ngFor="let country of posts">
+    {{country.country}}
+  </option>
+</select>-->
+<div class="label">
+Country:<input type="text" [(ngModel)]="Country" name="Country">
+</div>
+<br>
+<div class="label">
+Year:<input type="text" [(ngModel)]="Year" name="Year">
+</div>
+<br>
+<div class="label">
+IamgeUrl:<input type="text" [(ngModel)]="IamgeUrl" name="imagurl">
+</div>
+<br>
+
+<input class="button" type="submit" value="save" (click)="addcar()">
+</div>

@@ -1,0 +1,20 @@
+<div class="big">
+ 
+  <div class="container">
+    <h2>login</h2>
+    <input ngModel name="userName"  [(ngModel)]="userName"  class="box"type="text" placeholder="USERNAME" 
+    required
+    minlength="7">
+ 
+    <br>
+    <input class="box"type="password" name="Password" placeholder="PASSWORD" [(ngModel)]="Password">
+    <br>
+    
+    <button type="submit" value="login" (click)="onsubmit(userName,Password)">
+    {{check}}
+    <a  routerLink="/home">login</a>
+    </button>
+        
+
+</div>
+</div>

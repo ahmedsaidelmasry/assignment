@@ -1,0 +1,18 @@
+.container{
+    text-align: center;
+    background-color:#f9f9f9;
+    margin: 10% 30%;
+}
+.container .box{
+    margin-bottom: 5px;
+    background: transparent;
+    padding-left: 5px;
+    height: 20px;
+    width: 30vh;
+}
+.container button{
+    width: 80px;
+    margin: 10px 0px;
+    height: 30px;
+    background-color: gray;
+}

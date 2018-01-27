@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="overlay">
+        <div class="navbar">
+          <ul>
+            <li>Elephant Cars</li>
+            <li class="logout"><a routerLink="">logout</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+
+    <div class="new-car">
+      <button><a routerLink='/home/add'>add new car</a></button>
+    </div>
+      <table>
+        <tr>
+          <td>Brand</td>
+          <td>Country</td>
+          <td>Year</td>
+          <td>Delete</td>
+        </tr>
+        <tr *ngFor="let car of cars | async">
+          <td>{{ car.data.Brand}}</td>
+          <td>{{ car.data.Country}}</td>
+          <td>{{ car.data.Year}}</td>
+          <td class="del">(<a href="#" (click)="deleteCar(car.id)">Delete</a>) </td>
+        </tr>
+        
+      </table>
+      <!--
+      <ul *ngFor="let car of cars | async">
+        <li>
+          <strong>{{ car.data.Brand}}</strong>
+          <strong>{{ car.data.Country}}</strong>
+          <strong>{{ car.data.Year}}</strong>
+          <strong>(<a href="#" (click)="deleteCar(car.id)">Delete</a>)</strong>
+        </li>
+      </ul>-->
+    
+  </div>
+</div>
